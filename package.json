@@ -1,16 +1,15 @@
 {
-	"name": "unicorn-fun",
-	"version": "0.0.0",
-	"description": "My awesome module",
+	"name": "@web-stack/fsu",
+	"version": "0.0.1",
+	"description": "File update utility to edit and write back the file at same path",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun",
+	"repository": "web-stack/fsu",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "WebStack",
+		"email": "abhijeetkpawar@gmail.com"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10.18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -19,8 +18,8 @@
 		"index.js"
 	],
 	"keywords": [
-		"unicorn",
-		"fun"
+		"fsu",
+		"file"
 	],
 	"dependencies": {},
 	"devDependencies": {
