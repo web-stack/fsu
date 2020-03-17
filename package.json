@@ -1,32 +1,32 @@
 {
-	"name": "@web-stack/fsu",
-	"version": "0.0.1",
-	"description": "File update utility to edit and write back the file at same path",
-	"license": "MIT",
-	"repository": "web-stack/fsu",
-	"author": {
-		"name": "WebStack",
-		"email": "abhijeetkpawar@gmail.com"
-	},
-	"engines": {
-		"node": ">=10.18"
-	},
-	"scripts": {
-		"test": "xo && ava"
-	},
-	"files": [
-		"index.js"
-	],
-	"keywords": [
-		"fsu",
-		"file"
-	],
-	"dependencies": {
-		"globby": "^11.0.0",
-		"normalize-path": "^3.0.0"
-	},
-	"devDependencies": {
-		"ava": "^2.1.0",
-		"xo": "^0.24.0"
-	}
+  "name": "@web-stack/fsu",
+  "version": "0.0.1",
+  "description": "File update utility to edit and write back the file at same path",
+  "license": "MIT",
+  "repository": "web-stack/fsu",
+  "author": {
+    "name": "WebStack",
+    "email": "abhijeetkpawar@gmail.com"
+  },
+  "engines": {
+    "node": ">=10.18"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "fsu",
+    "file"
+  ],
+  "dependencies": {
+    "globby": "^11.0.0",
+    "normalize-path": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "xo": "^0.24.0"
+  }
 }
