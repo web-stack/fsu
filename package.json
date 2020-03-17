@@ -28,5 +28,11 @@
   "devDependencies": {
     "ava": "^2.1.0",
     "xo": "^0.24.0"
+  },
+  "xo": {
+    "space": 2,
+    "rules": {
+      "capitalized-comments": "off"
+    }
   }
 }
