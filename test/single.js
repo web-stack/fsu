@@ -1,10 +1,10 @@
-import fsu from '..';
-import test from 'ava';
-
 const fs = require('fs');
 const path = require('path');
+const test = require('ava');
 
-const testFile = path.join(__dirname, './test.txt');
+const fsu = require('..');
+
+const testFile = path.join(__dirname, 'single-test');
 const testContent = 'test-content';
 
 test.beforeEach(() => {

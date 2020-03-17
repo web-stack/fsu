@@ -21,7 +21,10 @@
 		"fsu",
 		"file"
 	],
-	"dependencies": {},
+	"dependencies": {
+		"globby": "^11.0.0",
+		"normalize-path": "^3.0.0"
+	},
 	"devDependencies": {
 		"ava": "^2.1.0",
 		"xo": "^0.24.0"
