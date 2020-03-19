@@ -19,10 +19,12 @@ fsu.update(patterns, (content) => {
 
 ## API
 
-### update(patterns, modifier)
+### `update(patterns, modifier)`
 
 Updates the file by applying the modifications to content and writes back to same path.
-It accepts glob pattern to modify multiple files in one command.
+It accepts glob pattern to modify multiple files in one command. 
+
+Returns: `Promise`
 
 #### patterns
 
@@ -42,23 +44,25 @@ Returns: `string`
 Modifier function has one argument passed - `contents` of the file. This function should return the modified contents as string.
 
 
-### updateSync(patterns, modifier)
+### `updateSync(patterns, modifier)`
 
-This is synchronous variant of `update()`. This returns a promise.
+This is synchronous variant of `update()`.
 
-#### patterns
+## Example
 
-Type: `string | string[]`
+This utility can covert 
+ 
+```   
+const files = globby.sync(path.join(__dirname, 'config*.js'));
 
-See supported `minimatch` [patterns](https://github.com/isaacs/minimatch#usage).
+files.forEach(file => {
+  let cnt = fs.readFileSync(file, 'utf8');
+  cnt = cnt.replace('"${ENV}"', 'prod');
+  fs.writeFileSync(file, cnt, 'utf8');
+});
+```
+to
 
-#### modifier
-
-Type: `function`
-
-Parameters:
-  * `content`: Contents of file as `string`
-
-Returns: `string`
-
-Modifier function has one argument passed - `contents` of the file. This function should return the modified contents as string.
+```
+fsu.updateSync(path.join(__dirname, 'config*.js'), c => c.replace('${ENV}', 'prod'));
+```
