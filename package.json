@@ -1,6 +1,6 @@
 {
   "name": "@web-stack/fsu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "File update utility to edit and write back the file at same path",
   "license": "MIT",
   "repository": "web-stack/fsu",
